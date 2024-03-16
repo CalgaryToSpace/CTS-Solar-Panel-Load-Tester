@@ -7,6 +7,9 @@ An Arduino controls a MOSFET, acting as a resistor load, to allow varying curren
 
 The Arduino logs the voltage/current values over UART to a computer.
 
+## Notes
+
+* R_shunt = Full Scale Voltage / Max Expected Load Current =  40mV / 0.5A = 80mOhms, so 0.1 ohms is reasonable
 
 ## License
 
