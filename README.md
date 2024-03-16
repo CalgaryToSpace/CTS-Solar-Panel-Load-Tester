@@ -16,3 +16,10 @@ The Arduino logs the voltage/current values over UART to a computer.
 The software is licensed under [The Unlicense](https://choosealicense.com/licenses/unlicense/). The hardware is licensed under the [CERN Open Hardware Licence Version 2 - Permissive](https://choosealicense.com/licenses/cern-ohl-p-2.0/).
 
 Please see the respective license documents in each sub-folder.
+
+## Similar Projects
+
+* https://jasper.sikken.nl/electronicload/index.html
+    * Uses an [IRLZ44Z MOSFET](https://www.infineon.com/dgdl/irlz44zpbf.pdf?fileId=5546d462533600a4015356722836272a)
+    * Archived on [the Wayback Machine](https://web.archive.org/web/20240229184606/https://jasper.sikken.nl/electronicload/index.html)
+    
