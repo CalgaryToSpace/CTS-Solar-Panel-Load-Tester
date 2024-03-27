@@ -9,11 +9,11 @@ INA219 ina_dev(0x40);
 // R2R LSB on D11
 // R2R MSB on D3 (9 bits) [set to 0 to keep low always, and make it an 8 bit DAC]
 
-void set_r2r_dac_value(uint8_t value) {
-  	digitalWrite(3, LOW); // always low
+void set_r2r_dac_value(uint16_t value) {
+  	//digitalWrite(3, LOW); // always low
 
 	// bit_place = 0 is the LSB (rightmost)
-	for (uint8_t bit_place = 0; bit_place < 8; bit_place++) {
+	for (uint8_t bit_place = 0; bit_place < 9; bit_place++) {
 		uint8_t bit = (value >> bit_place) & 0x01;
 		uint8_t pin = 11 - bit_place;
 		digitalWrite(pin, bit);
@@ -59,7 +59,7 @@ void debug_cycle_through_r2r_values() {
 	Serial.println("\nDone debug_cycle_through_r2r_values()\n");
 }
 
-void test_current_at_each_r2r_value(uint8_t start_r2r_value, uint8_t max_r2r_value, uint8_t increment_amount) {
+void test_current_at_each_r2r_value(uint16_t start_r2r_value, uint16_t max_r2r_value, uint16_t increment_amount) {
 	Serial.println("\nStarting test_current_at_each_r2r_value()\n");
 
 	// print the CSV header
@@ -136,9 +136,9 @@ void i2c_scanner() {
 
 
 void loop() {
-	const uint8_t start_r2r_value = 200;
-	const uint8_t max_r2r_value = 250;
-	const uint8_t increment_amount = 1;
+	const uint16_t start_r2r_value = 200;
+	const uint16_t max_r2r_value = 350;
+	const uint16_t increment_amount = 2;
 	test_current_at_each_r2r_value(start_r2r_value, max_r2r_value, increment_amount);
 
 	// i2c_scanner();
