@@ -2995,16 +2995,6 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 140.97) (xy 240.03 140.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "056a8585-8b8e-46ba-a8d1-6e3732347c54")
-	)
-	(wire
-		(pts
 			(xy 138.43 76.2) (xy 138.43 77.47)
 		)
 		(stroke
@@ -3075,6 +3065,16 @@
 	)
 	(wire
 		(pts
+			(xy 209.55 73.66) (xy 213.36 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1cd563d6-9297-4b68-a173-2566a2e40a32")
+	)
+	(wire
+		(pts
 			(xy 41.91 95.25) (xy 41.91 97.79)
 		)
 		(stroke
@@ -3095,6 +3095,16 @@
 	)
 	(wire
 		(pts
+			(xy 236.22 138.43) (xy 240.03 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24019cd5-33c4-471e-9e0a-113be00660bd")
+	)
+	(wire
+		(pts
 			(xy 198.12 40.64) (xy 199.39 40.64)
 		)
 		(stroke
@@ -3102,6 +3112,16 @@
 			(type default)
 		)
 		(uuid "266e9109-5276-4ab7-b477-f44b417ca971")
+	)
+	(wire
+		(pts
+			(xy 233.68 140.97) (xy 240.03 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2708d38e-b9f4-4100-ae90-1d7bdd88feba")
 	)
 	(wire
 		(pts
@@ -3435,6 +3455,16 @@
 	)
 	(wire
 		(pts
+			(xy 209.55 71.12) (xy 213.36 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "762fb1ae-3190-4ad4-80ed-15161c93950e")
+	)
+	(wire
+		(pts
 			(xy 115.57 30.48) (xy 118.11 30.48)
 		)
 		(stroke
@@ -3482,6 +3512,16 @@
 			(type default)
 		)
 		(uuid "7fefaab6-31e9-46a7-8f41-1e4b3e9a0431")
+	)
+	(wire
+		(pts
+			(xy 233.68 148.59) (xy 240.03 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "80246716-1843-4571-9af0-0e9c060b7f29")
 	)
 	(wire
 		(pts
@@ -3565,16 +3605,6 @@
 	)
 	(wire
 		(pts
-			(xy 209.55 71.12) (xy 213.36 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "95e1f9a1-0ecb-499a-9f7c-1d6da0774f75")
-	)
-	(wire
-		(pts
 			(xy 68.58 69.85) (xy 76.2 69.85)
 		)
 		(stroke
@@ -3582,16 +3612,6 @@
 			(type default)
 		)
 		(uuid "9a7dbdca-7659-4236-8391-2baad0788c41")
-	)
-	(wire
-		(pts
-			(xy 233.68 148.59) (xy 240.03 148.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a0c48e3c-720f-4d0c-8c76-ba625cef0fe1")
 	)
 	(wire
 		(pts
@@ -3632,16 +3652,6 @@
 			(type default)
 		)
 		(uuid "a6bfbb1f-2c5f-4d16-9fd4-21daae55e060")
-	)
-	(wire
-		(pts
-			(xy 209.55 73.66) (xy 213.36 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a749b372-11c1-42f7-aa32-cb17c8491105")
 	)
 	(wire
 		(pts
@@ -3695,7 +3705,7 @@
 	)
 	(wire
 		(pts
-			(xy 237.49 135.89) (xy 240.03 135.89)
+			(xy 236.22 135.89) (xy 240.03 135.89)
 		)
 		(stroke
 			(width 0)
@@ -3772,26 +3782,6 @@
 			(type default)
 		)
 		(uuid "c11c0cbe-46b1-41bd-a519-f415ec7d4a49")
-	)
-	(wire
-		(pts
-			(xy 233.68 146.05) (xy 240.03 146.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c1f9aae2-a319-4283-a991-a3e4f44b315d")
-	)
-	(wire
-		(pts
-			(xy 237.49 138.43) (xy 240.03 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cbbfd289-ca8e-42b5-a04f-3adc3b67fdcc")
 	)
 	(wire
 		(pts
@@ -3885,16 +3875,6 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 143.51) (xy 240.03 143.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e370cea8-00e9-41f8-acc5-0e7cee8487af")
-	)
-	(wire
-		(pts
 			(xy 27.94 132.08) (xy 25.4 132.08)
 		)
 		(stroke
@@ -3955,6 +3935,16 @@
 	)
 	(wire
 		(pts
+			(xy 233.68 146.05) (xy 240.03 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed9c655d-e810-47dc-97aa-530c4944dbff")
+	)
+	(wire
+		(pts
 			(xy 238.76 83.82) (xy 238.76 86.36)
 		)
 		(stroke
@@ -3972,6 +3962,16 @@
 			(type default)
 		)
 		(uuid "f01ccdd8-73ce-4fdc-8b20-605813c2c4c5")
+	)
+	(wire
+		(pts
+			(xy 233.68 143.51) (xy 240.03 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f508f230-435b-4d9c-b681-c2830cafeb63")
 	)
 	(wire
 		(pts
@@ -4388,7 +4388,7 @@
 	)
 	(global_label "MCU_ADC_SENSE"
 		(shape input)
-		(at 213.36 71.12 0)
+		(at 213.36 73.66 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4398,7 +4398,7 @@
 		)
 		(uuid "28dc208c-cf80-4580-a21d-6ae9c9122f0b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 232.0084 71.12 0)
+			(at 232.0084 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4410,7 +4410,7 @@
 	)
 	(global_label "MCU_MOSFET_CTRL"
 		(shape input)
-		(at 233.68 140.97 180)
+		(at 233.68 148.59 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4420,7 +4420,7 @@
 		)
 		(uuid "3049d29b-c832-48cf-b8e8-aa037b3ac5c4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 212.9754 140.97 0)
+			(at 212.9754 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4498,7 +4498,7 @@
 	)
 	(global_label "MCU_ADC_SENSE"
 		(shape input)
-		(at 233.68 148.59 180)
+		(at 233.68 140.97 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4508,7 +4508,7 @@
 		)
 		(uuid "6325b94e-399e-49d3-8165-23c553d1f955")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 215.0316 148.59 0)
+			(at 215.0316 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4564,7 +4564,7 @@
 	)
 	(global_label "MCU_I2C_SCL"
 		(shape input)
-		(at 233.68 146.05 180)
+		(at 233.68 143.51 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4574,7 +4574,7 @@
 		)
 		(uuid "7b7c8c48-fad9-442a-8143-26724461d43f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 218.1158 146.05 0)
+			(at 218.1158 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4608,7 +4608,7 @@
 	)
 	(global_label "MCU_I2C_SDA"
 		(shape input)
-		(at 233.68 143.51 180)
+		(at 233.68 146.05 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4618,7 +4618,7 @@
 		)
 		(uuid "a7f3e703-bce6-498f-85e4-26c164d32ac7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 218.0553 143.51 0)
+			(at 218.0553 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4674,7 +4674,7 @@
 	)
 	(global_label "MCU_ALT_CURRENT_SENSE"
 		(shape input)
-		(at 213.36 73.66 0)
+		(at 213.36 71.12 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4684,7 +4684,7 @@
 		)
 		(uuid "dd4ec198-aa0b-4ac1-ac51-83a37a836a83")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 241.0193 73.66 0)
+			(at 241.0193 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4765,6 +4765,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5V")
+		(at 236.22 138.43 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0829b66e-169e-47cf-a5f1-d4951b8e512f")
+		(property "Reference" "#PWR02"
+			(at 240.03 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 232.41 138.4299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 236.22 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 236.22 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 236.22 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e07a8a91-f3f6-475b-bd08-77b5bd9e854c")
+		)
+		(instances
+			(project "panel-tester-hardware"
+				(path "/23c26bde-ab5f-4264-8e38-0a6c77689fb6"
+					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Amplifier_Operational:LM358")
 		(at 52.07 59.69 0)
 		(unit 1)
@@ -4789,7 +4856,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+		(property "Footprint" "Package_DIP:DIP-8_W7.62mm_LongPads"
 			(at 52.07 59.69 0)
 			(effects
 				(font
@@ -5254,7 +5321,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+		(property "Footprint" "Package_DIP:DIP-8_W7.62mm_LongPads"
 			(at 140.97 87.63 0)
 			(effects
 				(font
@@ -6114,7 +6181,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
 			(at 85.09 61.595 0)
 			(effects
 				(font
@@ -6322,7 +6389,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+		(property "Footprint" "Package_DIP:DIP-8_W7.62mm_LongPads"
 			(at 52.07 83.82 0)
 			(effects
 				(font
@@ -7628,7 +7695,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 237.49 138.43 90)
+		(at 236.22 135.89 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7637,7 +7704,7 @@
 		(fields_autoplaced yes)
 		(uuid "f5642625-144e-4c1c-95be-5a8ebe839e74")
 		(property "Reference" "#PWR013"
-			(at 241.3 138.43 0)
+			(at 240.03 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7646,7 +7713,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 233.68 138.4299 90)
+			(at 232.41 135.8899 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7655,7 +7722,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 237.49 138.43 0)
+			(at 236.22 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7664,7 +7731,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 237.49 138.43 0)
+			(at 236.22 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7673,7 +7740,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 237.49 138.43 0)
+			(at 236.22 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7688,73 +7755,6 @@
 			(project "panel-tester-hardware"
 				(path "/23c26bde-ab5f-4264-8e38-0a6c77689fb6"
 					(reference "#PWR013")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 237.49 135.89 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f5b5b159-c341-49ca-800c-9fac6e84fdf5")
-		(property "Reference" "#PWR012"
-			(at 241.3 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 233.68 135.8899 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 237.49 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 237.49 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 237.49 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f41b3a0c-9a73-4d3a-b27a-d8419dc8aeb9")
-		)
-		(instances
-			(project "panel-tester-hardware"
-				(path "/23c26bde-ab5f-4264-8e38-0a6c77689fb6"
-					(reference "#PWR012")
 					(unit 1)
 				)
 			)
