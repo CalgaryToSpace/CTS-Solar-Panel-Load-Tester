@@ -1,9 +1,11 @@
 # CTS-Solar-Panel-Load-Tester
 A solar cell/panel testing device which places a variable load on a panel to characterize its IV/PV curve
 
+This project is heavily inspired by similar open-source designs - https://circuitdigest.com/microcontroller-projects/adustable-electronic-dc-load-using-arduino
+
 ## Description
 
-An Arduino controls a MOSFET, acting as a resistor load, to allow varying current through the MOSFET from the solar panels. An INA219 current sensor measures the current flowing, and an ADC measures the total cell/panel voltage.
+An Arduino controls a MOSFET, acting as a resistor load, to allow varying current through the MOSFET from the solar panels. Two measures are used to monitor current - an INA219 current sensor and shunt resistor with and op-amp network. An ADC measures the total cell/panel voltage.
 
 The Arduino logs the voltage/current values over UART to a computer.
 
