@@ -2012,7 +2012,7 @@
 		(descr "Resistor SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor handsolder")
 		(property "Reference" "R11"
-			(at 0 -2 360)
+			(at 0 -2 0)
 			(layer "F.SilkS")
 			(uuid "1d570cb6-598d-4331-9faf-c0e20ee5076f")
 			(effects
@@ -2023,7 +2023,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 4 0 360)
+			(at 4 0 0)
 			(layer "F.SilkS")
 			(uuid "e9ce7b8b-7d75-4af6-9b51-5169435fccf6")
 			(effects
@@ -2175,7 +2175,7 @@
 			(uuid "0d70c76f-3ce8-4192-ab2e-2620d69b6a03")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "2e4ed05c-2929-470f-8734-b302eac9db9c")
 			(effects
@@ -3574,7 +3574,7 @@
 		(descr "Capacitor SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor handsolder")
 		(property "Reference" "C5"
-			(at 0.0625 -2 360)
+			(at 0.0625 -2 0)
 			(layer "F.SilkS")
 			(uuid "476c4d0c-2c6a-4a7c-bd0f-d91985f0205c")
 			(effects
@@ -3737,7 +3737,7 @@
 			(uuid "da1c83f5-add5-4936-b2c7-46d0eab0cf14")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "8611be41-867d-45e6-be1d-99c59b50bdad")
 			(effects
@@ -5155,7 +5155,7 @@
 		(descr "Capacitor SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor handsolder")
 		(property "Reference" "C1"
-			(at 0 2 360)
+			(at 0 2 0)
 			(layer "F.SilkS")
 			(uuid "0e73256f-fd19-4731-98ec-07707c650d2a")
 			(effects
@@ -5318,7 +5318,7 @@
 			(uuid "f05c4d38-064e-4676-aab3-8d2dc43a4eed")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "336f1477-a464-4e41-9c6e-8d46f0cb86c5")
 			(effects
@@ -6348,7 +6348,7 @@
 			)
 		)
 		(property "Value" "MCP4921"
-			(at 0 3.4 360)
+			(at 0 3.4 0)
 			(layer "F.Fab")
 			(uuid "edd1bf78-65d4-4238-945a-4365f50bb8ef")
 			(effects
@@ -6555,7 +6555,7 @@
 			(uuid "006a7be8-105f-468d-8a2c-c0e7582e0b4b")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "fa97b6bb-5b38-4fe1-8282-ac21890ff6a4")
 			(effects
@@ -8099,7 +8099,7 @@
 		(layer "Edge.Cuts")
 		(uuid "01e6eb19-913e-4e13-a540-4f23e1c32cf2")
 	)
-	(gr_text "2024-05-18\nRev. 1.1\n"
+	(gr_text "2024-05-18\nRev. 2\n"
 		(at 160 44.8 0)
 		(layer "B.SilkS")
 		(uuid "4bfacda3-d6ed-4915-96bd-72a5de946c5b")
