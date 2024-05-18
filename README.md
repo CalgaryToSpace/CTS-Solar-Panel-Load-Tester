@@ -5,7 +5,7 @@ This project is heavily inspired by similar open-source designs - https://circui
 
 ## Description
 
-An Arduino controls a MOSFET, acting as a resistor load, to allow varying current through the MOSFET from the solar panels. Two measures are used to monitor current - an INA219 current sensor and shunt resistor with and op-amp network. An ADC measures the total cell/panel voltage.
+An Arduino controls a MOSFET, acting as a resistor load, to allow varying current through the MOSFET from the solar panels. Two measures are used to monitor current - an INA219 current sensor, and a shunt resistor with an op-amp network. An ADC measures the total cell/panel voltage.
 
 The Arduino logs the voltage/current values over UART to a computer.
 
