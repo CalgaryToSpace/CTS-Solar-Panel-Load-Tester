@@ -3141,6 +3141,12 @@
 		(uuid "b193f8e0-d4e0-485e-b889-fab90f0c9825")
 	)
 	(junction
+		(at 60.96 57.15)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ba012902-8a57-4cd5-bfe3-72a9f56f351b")
+	)
+	(junction
 		(at 163.83 82.55)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3722,6 +3728,16 @@
 	)
 	(wire
 		(pts
+			(xy 60.96 57.15) (xy 62.23 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6178348a-eeee-446d-9206-c01b26952539")
+	)
+	(wire
+		(pts
 			(xy 130.81 41.91) (xy 130.81 35.56)
 		)
 		(stroke
@@ -4042,6 +4058,16 @@
 	)
 	(wire
 		(pts
+			(xy 60.96 50.8) (xy 60.96 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a9c00669-be69-46c2-a887-90b9db3e0590")
+	)
+	(wire
+		(pts
 			(xy 162.56 149.86) (xy 157.48 149.86)
 		)
 		(stroke
@@ -4132,7 +4158,7 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 57.15) (xy 62.23 57.15)
+			(xy 58.42 57.15) (xy 60.96 57.15)
 		)
 		(stroke
 			(width 0)
@@ -4562,6 +4588,16 @@
 		)
 		(uuid f0fee758-f9dc-4e19-acf0-51fa6084de6c)
 	)
+	(text "Optional Voltage Divider;\nR5 and R6 not needed"
+		(exclude_from_sim no)
+		(at 66.294 79.502 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "0a6856fd-b936-422c-8e81-ed9f6825f405")
+	)
 	(text "A short story explaining this project"
 		(exclude_from_sim no)
 		(at 87.122 178.054 0)
@@ -4845,7 +4881,7 @@
 			)
 		)
 	)
-	(global_label "MCU_MOSFET_CTRL"
+	(global_label "DAC_OUTPUT"
 		(shape input)
 		(at 233.68 148.59 180)
 		(fields_autoplaced yes)
@@ -4857,7 +4893,7 @@
 		)
 		(uuid "3049d29b-c832-48cf-b8e8-aa037b3ac5c4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 212.9754 148.59 0)
+			(at 218.9019 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5127,6 +5163,28 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "DAC_OUTPUT"
+		(shape input)
+		(at 60.96 50.8 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "baf2bd63-da6a-4e68-967d-284de676bf07")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 60.96 36.0219 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
