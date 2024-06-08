@@ -16,9 +16,10 @@ const int I2C_SCL = A5;
 int alt_current_sense = A0;
 int voltage_divider_value = A1;
 
+
 void voltage_from_panels(){
-	float voltage_sensed = voltage_divider_value / (2/12);
-	Serial.println(voltage_sensed);
+	// float voltage_sensed = voltage_divider_value / (2/12);
+	// Serial.println(voltage_sensed);
 }
 
 void current_from_IC(){
@@ -47,17 +48,17 @@ void setup(){
 	// Initialize Serial
 	Serial.begin(115200);
 
-	// Initialize I2C and INA219
-	Wire.begin();
-	if (!INA.begin() )
-	{
-		Serial.println("Could not connect. Fix and Reboot");
-	}
-	Serial.print("INA219_LIB_VERSION: ");
-  	Serial.println(INA219_LIB_VERSION);
-	INA.setMaxCurrentShunt(1, 0.04);
-	delay(100);
-	Serial.println(INA.getBusVoltageRange());
+	// // Initialize I2C and INA219
+	// Wire.begin();
+	// if (!INA.begin() )
+	// {
+	// 	Serial.println("Could not connect. Fix and Reboot");
+	// }
+	// Serial.print("INA219_LIB_VERSION: ");
+  	// Serial.println(INA219_LIB_VERSION);
+	// INA.setMaxCurrentShunt(1, 0.04);
+	// delay(100);
+	// Serial.println(INA.getBusVoltageRange());
 
 	// Initialize MCP4921 and SPI
 	SPI.begin();
@@ -83,8 +84,9 @@ void setup(){
 }
 
 void loop(){
-	voltage_from_panels();
-	current_from_IC();
+	// voltage_from_panels();
+	// current_from_IC();
+	delay(1000);
 }
 
 
