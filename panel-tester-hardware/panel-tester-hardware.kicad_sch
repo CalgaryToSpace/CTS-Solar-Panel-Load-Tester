@@ -4,10 +4,6 @@
 	(generator_version "8.0")
 	(uuid "23c26bde-ab5f-4264-8e38-0a6c77689fb6")
 	(paper "USLetter")
-	(title_block
-		(date "2024-03-15")
-		(rev "Rev 0")
-	)
 	(lib_symbols
 		(symbol "Amplifier_Operational:LM358"
 			(pin_names
