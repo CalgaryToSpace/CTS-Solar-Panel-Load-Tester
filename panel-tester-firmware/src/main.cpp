@@ -1,64 +1,18 @@
 #include <Arduino.h>
-#include <INA219.h>
 #include <MCP_DAC.h>
 #include <Wire.h>
 #include <SPI.h>
 
-INA219 INA(0x40);
 MCP4911 MCP;
 
-const int DAC_CHIP_SELECT = 10;
+const int DAC_CS = 10;
 const int DAC_SCK = 13;
 const int DAC_MOSI = 3;
-const int I2C_SDA = A4;
-const int I2C_SCL = A5;
+float DAC_OUTPUT = A2;
 
-int alt_current_sense = A0;
-int voltage_divider_value = A1;
-
-
-void voltage_from_panels(){
-	// float voltage_sensed = voltage_divider_value / (2/12);
-	// Serial.println(voltage_sensed);
-}
-
-void current_from_IC(){
-	float bus_voltage_V = INA.getBusVoltage();
-	float current_sensed_INA = INA.getCurrent_mA();
-	float shunt_voltage_mV = INA.getShuntVoltage_mV();
-	uint8_t shunt_adc = INA.getShuntADC();
-	Serial.print(",");
-	Serial.print(bus_voltage_V, 3);
-	Serial.print(",");
-	Serial.print(current_sensed_INA, 2);
-	Serial.print(",");
-	Serial.print(shunt_voltage_mV, 4);
-	Serial.print(",");
-	Serial.print(shunt_adc);
-	Serial.println();
-	delay(1000);
-}
-
-void current_from_FET_OPAMP(){
-
-}
-
-void setup(){
-
+void setup() {
 	// Initialize Serial
 	Serial.begin(115200);
-
-	// // Initialize I2C and INA219
-	// Wire.begin();
-	// if (!INA.begin() )
-	// {
-	// 	Serial.println("Could not connect. Fix and Reboot");
-	// }
-	// Serial.print("INA219_LIB_VERSION: ");
-  	// Serial.println(INA219_LIB_VERSION);
-	// INA.setMaxCurrentShunt(1, 0.04);
-	// delay(100);
-	// Serial.println(INA.getBusVoltageRange());
 
 	// Initialize MCP4921 and SPI
 	SPI.begin();
@@ -75,19 +29,220 @@ void setup(){
 	delay(100);
 
 	// Initialize GPIO pins
-	pinMode(alt_current_sense, INPUT);
-	pinMode(voltage_divider_value, INPUT);
 	pinMode(DAC_MOSI, OUTPUT);
-	pinMode(DAC_CHIP_SELECT, OUTPUT);
+	pinMode(DAC_CS, OUTPUT);
 	pinMode(DAC_SCK, OUTPUT);
-	
+	pinMode(DAC_OUTPUT, INPUT);
+  	digitalWrite(DAC_CS, HIGH);
 }
 
-void loop(){
-	// voltage_from_panels();
-	// current_from_IC();
-	delay(1000);
+void mcp4921(uint16_t value)
+{
+  uint16_t data = 0x3000 | value;
+  digitalWrite(DAC_CS, LOW);
+  SPI.beginTransaction(SPISettings(16000000, MSBFIRST, SPI_MODE0));
+  SPI.transfer((uint8_t)(data >> 8));
+  SPI.transfer((uint8_t)(data & 0xFF));
+  SPI.endTransaction();
+  digitalWrite(DAC_CS, HIGH);
 }
+
+void loop() {
+  Serial.println();
+  Serial.println(__FUNCTION__);
+
+  for (uint16_t value = 0; value < 4096; value += 0xFF)
+  {
+    mcp4921(value);
+    Serial.print(value);
+    Serial.print("\t");
+    Serial.println(analogRead(A2));
+    delay(10);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// #include <Arduino.h>
+// #include <INA219.h>
+// #include <MCP_DAC.h>
+// #include <Wire.h>
+// #include <SPI.h>
+
+// INA219 INA(0x40);
+// MCP4911 MCP;
+
+// const int DAC_CHIP_SELECT = 10;
+// const int DAC_SCK = 13;
+// const int DAC_MOSI = 3;
+// const int I2C_SDA = A4;
+// const int I2C_SCL = A5;
+
+// int alt_current_sense = A0;
+// int voltage_divider_value = A1;
+
+
+// void voltage_from_panels(){
+// 	// float voltage_sensed = voltage_divider_value / (2/12);
+// 	// Serial.println(voltage_sensed);
+// }
+
+// void current_from_IC(){
+// 	float bus_voltage_V = INA.getBusVoltage();
+// 	float current_sensed_INA = INA.getCurrent_mA();
+// 	float shunt_voltage_mV = INA.getShuntVoltage_mV();
+// 	uint8_t shunt_adc = INA.getShuntADC();
+// 	Serial.print(",");
+// 	Serial.print(bus_voltage_V, 3);
+// 	Serial.print(",");
+// 	Serial.print(current_sensed_INA, 2);
+// 	Serial.print(",");
+// 	Serial.print(shunt_voltage_mV, 4);
+// 	Serial.print(",");
+// 	Serial.print(shunt_adc);
+// 	Serial.println();
+// 	delay(1000);
+// }
+
+// void current_from_FET_OPAMP(){
+
+// }
+
+// void setup(){
+
+// 	// Initialize Serial
+// 	Serial.begin(115200);
+
+// 	// // Initialize I2C and INA219
+// 	// Wire.begin();
+// 	// if (!INA.begin() )
+// 	// {
+// 	// 	Serial.println("Could not connect. Fix and Reboot");
+// 	// }
+// 	// Serial.print("INA219_LIB_VERSION: ");
+//   	// Serial.println(INA219_LIB_VERSION);
+// 	// INA.setMaxCurrentShunt(1, 0.04);
+// 	// delay(100);
+// 	// Serial.println(INA.getBusVoltageRange());
+
+// 	// Initialize MCP4921 and SPI
+// 	SPI.begin();
+// 	MCP.begin(10);
+// 	Serial.print("SPI:\t");
+// 	Serial.println(MCP.usesHWSPI());
+// 	Serial.print("MCP_DAC_LIB_VERSION: ");
+// 	Serial.println(MCP_DAC_LIB_VERSION);
+// 	Serial.println();
+// 	Serial.print("CHANNELS:\t");
+// 	Serial.println(MCP.channels());
+// 	Serial.print("MAXVALUE:\t");
+// 	Serial.println(MCP.maxValue());
+// 	delay(100);
+
+// 	// Initialize GPIO pins
+// 	pinMode(alt_current_sense, INPUT);
+// 	pinMode(voltage_divider_value, INPUT);
+// 	pinMode(DAC_MOSI, OUTPUT);
+// 	pinMode(DAC_CHIP_SELECT, OUTPUT);
+// 	pinMode(DAC_SCK, OUTPUT);
+	
+// }
+
+// void loop(){
+// 	// voltage_from_panels();
+// 	// current_from_IC();
+// 	delay(1000);
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
