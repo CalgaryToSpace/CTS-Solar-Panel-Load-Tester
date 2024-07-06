@@ -1,65 +1,141 @@
-#include <Arduino.h>
-#include <MCP_DAC.h>
-#include <Wire.h>
-#include <SPI.h>
+//
+//    FILE: MCP4921_standalone.ino
+//  AUTHOR: Rob Tillaart
+// PURPOSE: faster no checking MCP4921 specific code
+//     URL: https://github.com/RobTillaart/MCP_DAC
 
-MCP4911 MCP;
 
-const int DAC_CS = 10;
-const int DAC_SCK = 13;
-const int DAC_MOSI = 3;
-float DAC_OUTPUT = A2;
+#include "MCP_DAC.h"
+#include "Wire.h"
 
-void setup() {
-	// Initialize Serial
-	Serial.begin(115200);
 
-	// Initialize MCP4921 and SPI
-	SPI.begin();
-	MCP.begin(10);
-	Serial.print("SPI:\t");
-	Serial.println(MCP.usesHWSPI());
-	Serial.print("MCP_DAC_LIB_VERSION: ");
-	Serial.println(MCP_DAC_LIB_VERSION);
-	Serial.println();
-	Serial.print("CHANNELS:\t");
-	Serial.println(MCP.channels());
-	Serial.print("MAXVALUE:\t");
-	Serial.println(MCP.maxValue());
-	delay(100);
+MCP4921 MCP(11, 13);  //  SW SPI
+// MCP4921 MCP;  //  HW SPI
 
-	// Initialize GPIO pins
-	pinMode(DAC_MOSI, OUTPUT);
-	pinMode(DAC_CS, OUTPUT);
-	pinMode(DAC_SCK, OUTPUT);
-	pinMode(DAC_OUTPUT, INPUT);
-  	digitalWrite(DAC_CS, HIGH);
-}
+volatile int x;
+uint32_t start, stop;
 
-void mcp4921(uint16_t value)
+
+void analogWrite_test()
 {
-  uint16_t data = 0x3000 | value;
-  digitalWrite(DAC_CS, LOW);
-  SPI.beginTransaction(SPISettings(16000000, MSBFIRST, SPI_MODE0));
-  SPI.transfer((uint8_t)(data >> 8));
-  SPI.transfer((uint8_t)(data & 0xFF));
-  SPI.endTransaction();
-  digitalWrite(DAC_CS, HIGH);
-}
-
-void loop() {
   Serial.println();
   Serial.println(__FUNCTION__);
-
-  for (uint16_t value = 0; value < 4096; value += 0xFF)
+  for (int channel = 0; channel < MCP.channels(); channel++)
   {
-    mcp4921(value);
-    Serial.print(value);
-    Serial.print("\t");
-    Serial.println(analogRead(A2));
-    delay(10);
+    // Serial.println(channel);
+    for (uint16_t value = 0; value < MCP.maxValue(); value += 0xFF)
+    {
+      MCP.write(value, channel);
+      Serial.print(value);
+      Serial.print("\t");
+      Serial.println(analogRead(A2));
+      delay(1000);
+    }
   }
 }
+
+
+void setup()
+{
+  Serial.begin(115200);
+  Serial.println(__FILE__);
+
+  SPI.begin();
+
+  MCP.begin(10);
+  
+  Serial.print("MCP_DAC_LIB_VERSION: ");
+  Serial.println(MCP_DAC_LIB_VERSION);
+  Serial.println();
+  Serial.print("CHANNELS:\t");
+  Serial.println(MCP.channels());
+  Serial.print("MAXVALUE:\t");
+  Serial.println(MCP.maxValue());
+  delay(100);
+
+  analogWrite_test();
+
+  Serial.println("\nDone...");
+}
+
+
+void loop()
+{
+}
+
+
+
+
+
+
+
+
+
+
+
+
+// #include <Arduino.h>
+// #include <MCP_DAC.h>
+// #include <Wire.h>
+// #include <SPI.h>
+
+// MCP4921 MCP;
+
+// const int DAC_CS = 10;
+// const int DAC_SCK = 13;
+// const int DAC_MOSI = 3;
+// float DAC_OUTPUT = A2;
+
+// void setup() {
+// 	// Initialize Serial
+// 	Serial.begin(115200);
+
+// 	// Initialize MCP4921 and SPI
+// 	SPI.begin();
+// 	MCP.begin(10);
+// 	Serial.print("SPI:\t");
+// 	Serial.println(MCP.usesHWSPI());
+// 	Serial.print("MCP_DAC_LIB_VERSION: ");
+// 	Serial.println(MCP_DAC_LIB_VERSION);
+// 	Serial.println();
+// 	Serial.print("CHANNELS:\t");
+// 	Serial.println(MCP.channels());
+// 	Serial.print("MAXVALUE:\t");
+// 	Serial.println(MCP.maxValue());
+// 	delay(100);
+
+// 	// Initialize GPIO pins
+// 	pinMode(DAC_MOSI, OUTPUT);
+// 	pinMode(DAC_CS, OUTPUT);
+// 	pinMode(DAC_SCK, OUTPUT);
+// 	pinMode(DAC_OUTPUT, INPUT);
+//   	digitalWrite(DAC_CS, HIGH);
+// }
+
+// void mcp4921(uint16_t value)
+// {
+//   uint16_t data = 0x3000 | value;
+//   digitalWrite(DAC_CS, LOW);
+//   SPI.beginTransaction(SPISettings(16000000, MSBFIRST, SPI_MODE0));
+//   SPI.transfer((uint8_t)(data >> 8));
+//   SPI.transfer((uint8_t)(data & 0xFF));
+//   SPI.endTransaction();
+//   digitalWrite(DAC_CS, HIGH);
+// }
+
+// void loop() {
+//   Serial.println();
+//   Serial.println(__FUNCTION__);
+
+//   for (uint16_t value = 0; value < 4096; value += 0xFF)
+//   {
+//     mcp4921(value);
+//     Serial.print(value);
+//     Serial.print("\t");////
+//     Serial.println(analogRead(A2));
+//     delay(2000);
+//   }
+// }
 
 
 
