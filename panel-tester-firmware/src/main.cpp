@@ -7,8 +7,6 @@ MCP4921 MCP(11, 13); // Initialize DAC with MOSI=D11, CLK=D13
 // MCP4921 MCP;  //  HW SPI, Default: MOSI=D11, CLK=D13
 
 INA219 INA(0x40); // Initialize INA219 sensor at I2C address 0x40
-
-void voltage_loop(); // Varies voltage on pin A1 to increment from 0 V to 3.3 V
 float analog_to_voltage(); // Converts analogRead() value to physical voltage
 void INA_measurements(); // Measures bus voltage and input current through R_SHUNT3
 
@@ -17,8 +15,15 @@ void setup() {
   Serial.println(__FILE__);
   // SPI.begin(); // Use with HW SPI only
 
+  Wire.begin();
   MCP.begin(10); // Set pin 10 to OUTPUT and HIGH
-  if (!INA.begin()) (Serial.print("INA219 sensor not connected."));
+  Serial.println("MCP_DAC Initialized");
+  if (INA.begin()) {
+    Serial.println("INA219 Sensor Connected");
+  }
+  else {
+    Serial.println("INA219 sensor not connected.");
+  }
   
   Serial.print("MCP_DAC_LIB_VERSION: "); Serial.println(MCP_DAC_LIB_VERSION); Serial.println();
   Serial.print("CHANNELS:\t"); Serial.println(MCP.channels()); // Prints # of DAC channels (1)
@@ -31,9 +36,21 @@ void setup() {
 }
 
 void loop() { 
-  
+  for (int value = 0; value <= 4096; value += 315) {
+    MCP.write(value, 1); // Args: value (0-4095), channel (1)
+    // Note that 4096 exceeds the max value of 4095 but for the purpose of including 4095 this is fine
+    delay(3000);
+
+    Serial.print("Analog read @ "); Serial.print(value); Serial.print(": ");
+    Serial.print(analog_to_voltage()); Serial.println(" V");
+    INA_measurements();
+    Serial.println("----------------------------------"); // For readablility
+    delay(3000);
+
+  }
 }
 
+/* This loop is redundant
 void voltage_loop() {
   // DAC only has one channel (1), loop function loops through different values (0-4095)    
   for (int value = 0; value <= 4096; value += 315) {
@@ -49,6 +66,7 @@ void voltage_loop() {
 
   }
 }
+*/
 
 float analog_to_voltage() {
   float Vout = 3.7 * ((float)analogRead(A1)) / 1023.0;
