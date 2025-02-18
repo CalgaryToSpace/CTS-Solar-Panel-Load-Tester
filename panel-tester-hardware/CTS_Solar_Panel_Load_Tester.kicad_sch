@@ -3405,6 +3405,16 @@
 		)
 		(uuid "45c0203a-43bf-4cf6-a5eb-7c7b93ac43e4")
 	)
+	(text "I2C Address 0x40"
+		(exclude_from_sim no)
+		(at 203.454 49.022 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "92727ed4-ad4d-4f0f-a5e3-50379b32bd0b")
+	)
 	(text "This solar panel load tester is design to apply a known, consistent, variable load to solar cells and/or panels in order to characterize\ntheir I-V and P-V curves. It uses a precision current sense IC (INA219)and a current sense shunt resistor. \n\n\nThe microcontroller will log information about the total panel/cell voltage and current over UART for plotting and analysis.\n\nThis schematic will first be built on a perfboard, and will likely be manufactured into a PCB shortly thereafter."
 		(exclude_from_sim no)
 		(at 93.218 157.734 0)
