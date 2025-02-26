@@ -352,21 +352,21 @@
 				)
 			)
 		)
-		(symbol "Connector_Generic:Conn_01x07"
+		(symbol "Connector_Generic:Conn_01x06"
 			(pin_names
 				(offset 1.016) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "J"
-				(at 0 10.16 0)
+				(at 0 7.62 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "Conn_01x07"
+			(property "Value" "Conn_01x06"
 				(at 0 -10.16 0)
 				(effects
 					(font
@@ -392,7 +392,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Generic connector, single row, 01x07, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(property "Description" "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
 				(at 0 0 0)
 				(effects
 					(font
@@ -419,7 +419,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "Conn_01x07_1_1"
+			(symbol "Conn_01x06_1_1"
 				(rectangle
 					(start -1.27 -7.493)
 					(end 0 -7.747)
@@ -487,18 +487,7 @@
 					)
 				)
 				(rectangle
-					(start -1.27 7.747)
-					(end 0 7.493)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.27 8.89)
+					(start -1.27 6.35)
 					(end 1.27 -8.89)
 					(stroke
 						(width 0.254)
@@ -509,7 +498,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 7.62 0)
+					(at -5.08 5.08 0)
 					(length 3.81)
 					(name "Pin_1"
 						(effects
@@ -527,7 +516,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 5.08 0)
+					(at -5.08 2.54 0)
 					(length 3.81)
 					(name "Pin_2"
 						(effects
@@ -545,7 +534,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 2.54 0)
+					(at -5.08 0 0)
 					(length 3.81)
 					(name "Pin_3"
 						(effects
@@ -563,7 +552,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 0 0)
+					(at -5.08 -2.54 0)
 					(length 3.81)
 					(name "Pin_4"
 						(effects
@@ -581,7 +570,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -2.54 0)
+					(at -5.08 -5.08 0)
 					(length 3.81)
 					(name "Pin_5"
 						(effects
@@ -599,7 +588,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -5.08 0)
+					(at -5.08 -7.62 0)
 					(length 3.81)
 					(name "Pin_6"
 						(effects
@@ -609,24 +598,6 @@
 						)
 					)
 					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -7.62 0)
-					(length 3.81)
-					(name "Pin_7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1184,7 +1155,16 @@
 					(hide yes)
 				)
 			)
-			(property "Description" ""
+			(property "Description" "STM32 Blue Pill ; KLC compliant"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "module blue pill STM32"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3138,6 +3118,108 @@
 				)
 			)
 		)
+		(symbol "power:PWR_FLAG"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+		)
+	)
+	(junction
+		(at 38.1 76.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "019f2b95-88eb-47df-9291-d011a5988d0e")
 	)
 	(junction
 		(at 38.1 78.74)
@@ -3150,6 +3232,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4dd85753-634c-4a52-b568-712799d87129")
+	)
+	(junction
+		(at 242.57 57.15)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "67b90783-d296-4009-9a96-b84908cca936")
+	)
+	(junction
+		(at 72.39 40.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a302c46b-102f-44c9-b69e-2b038b9bbaff")
 	)
 	(junction
 		(at 151.13 52.07)
@@ -3194,8 +3288,136 @@
 		(uuid "ee5626d0-0643-42ed-8bb2-09412d803adc")
 	)
 	(no_connect
+		(at 54.61 91.44)
+		(uuid "0a128000-d17b-4ae4-82b8-b3f3c2cb60be")
+	)
+	(no_connect
+		(at 95.25 83.82)
+		(uuid "0b8ee332-321e-4070-8a36-6f7f37871ccc")
+	)
+	(no_connect
+		(at 54.61 78.74)
+		(uuid "1224be45-d8b1-49de-939a-641fc8550d85")
+	)
+	(no_connect
+		(at 95.25 63.5)
+		(uuid "1968923c-6bef-41aa-b9a5-b5a363023380")
+	)
+	(no_connect
+		(at 54.61 63.5)
+		(uuid "1ecb2fce-46a4-4a84-a31a-06d09b2cc221")
+	)
+	(no_connect
+		(at 69.85 43.18)
+		(uuid "2886fdb1-64e6-4a00-b902-287ff0442c51")
+	)
+	(no_connect
+		(at 54.61 73.66)
+		(uuid "300482f4-9759-4e30-9457-bdfc75173c0c")
+	)
+	(no_connect
+		(at 95.25 76.2)
+		(uuid "3387c932-0e72-41eb-8137-1a51610eb160")
+	)
+	(no_connect
+		(at 54.61 66.04)
+		(uuid "3bd47357-6344-40d7-99a2-3e9e3c2352ff")
+	)
+	(no_connect
+		(at 95.25 55.88)
+		(uuid "408d716e-31e8-48ba-ad1a-c1bc0783ee5b")
+	)
+	(no_connect
+		(at 54.61 53.34)
+		(uuid "4488185c-59e1-4e78-9b05-6bbcbc23841f")
+	)
+	(no_connect
+		(at 54.61 68.58)
+		(uuid "46482897-6697-47ce-8e7e-bc23f0176780")
+	)
+	(no_connect
+		(at 95.25 53.34)
+		(uuid "4934eb7a-300e-42cb-a40c-7241eb9c7a45")
+	)
+	(no_connect
+		(at 54.61 60.96)
+		(uuid "4aac4e41-a6b2-4e0c-9a7c-c3a200ed47da")
+	)
+	(no_connect
+		(at 54.61 71.12)
+		(uuid "4ef866bc-6b39-47e1-ad12-f00510a08077")
+	)
+	(no_connect
+		(at 95.25 50.8)
+		(uuid "50ba1190-ed0a-4265-b54f-b047c0473f41")
+	)
+	(no_connect
+		(at 95.25 60.96)
+		(uuid "5588c66c-9410-42b2-bf7b-59a33bf940b8")
+	)
+	(no_connect
+		(at 95.25 88.9)
+		(uuid "5d35dbc1-9612-4df0-a789-0561ee0e1fa8")
+	)
+	(no_connect
+		(at 54.61 81.28)
+		(uuid "5f210285-7a2a-4858-966c-4342864b9c4e")
+	)
+	(no_connect
+		(at 95.25 73.66)
+		(uuid "69bea1dc-58da-4a86-90f1-ca2d5f583737")
+	)
+	(no_connect
+		(at 95.25 71.12)
+		(uuid "6abb2160-53af-4c23-ad68-b5adb241b8d1")
+	)
+	(no_connect
+		(at 54.61 88.9)
+		(uuid "77c9fc9b-b586-4c07-9a11-c264e294d975")
+	)
+	(no_connect
+		(at 54.61 76.2)
+		(uuid "82585597-49a1-4218-b7ef-4ef4d7fcf2b0")
+	)
+	(no_connect
+		(at 95.25 78.74)
+		(uuid "97b1a9a9-4943-494a-923c-d676e65dbcbf")
+	)
+	(no_connect
+		(at 95.25 81.28)
+		(uuid "a5a6a7bf-0181-4b06-980b-915cd8249446")
+	)
+	(no_connect
+		(at 54.61 58.42)
+		(uuid "a8dbeb96-7932-4fd7-96d1-c9b56229e51c")
+	)
+	(no_connect
+		(at 54.61 55.88)
+		(uuid "ac235b87-a204-42da-b9d1-f50dccf37ade")
+	)
+	(no_connect
+		(at 54.61 50.8)
+		(uuid "b6ec5009-0d46-4faf-b183-e97c01de82b4")
+	)
+	(no_connect
 		(at 151.13 60.96)
 		(uuid "de18eb0d-83e8-4168-80c7-a8209586aa7e")
+	)
+	(no_connect
+		(at 95.25 58.42)
+		(uuid "e9322495-6872-4e2b-884e-70be65d68e39")
+	)
+	(no_connect
+		(at 95.25 66.04)
+		(uuid "f4aded76-a19d-4f52-b409-5ed02392df1b")
+	)
+	(no_connect
+		(at 95.25 86.36)
+		(uuid "f86c48ee-187d-479c-8e6a-027cfe4be8f3")
+	)
+	(no_connect
+		(at 95.25 68.58)
+		(uuid "fd31805e-d0c1-4158-81d9-5a854613e773")
 	)
 	(wire
 		(pts
@@ -3349,7 +3571,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 39.37) (xy 72.39 43.18)
+			(xy 72.39 39.37) (xy 72.39 40.64)
 		)
 		(stroke
 			(width 0)
@@ -3539,7 +3761,7 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 119.38) (xy 152.4 119.38)
+			(xy 149.86 116.84) (xy 152.4 116.84)
 		)
 		(stroke
 			(width 0)
@@ -3579,7 +3801,7 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 74.93) (xy 38.1 78.74)
+			(xy 38.1 74.93) (xy 38.1 76.2)
 		)
 		(stroke
 			(width 0)
@@ -3729,7 +3951,7 @@
 	)
 	(wire
 		(pts
-			(xy 242.57 58.42) (xy 242.57 55.88)
+			(xy 242.57 58.42) (xy 242.57 57.15)
 		)
 		(stroke
 			(width 0)
@@ -3746,6 +3968,26 @@
 			(type default)
 		)
 		(uuid "e7dd2bd0-9c94-46a7-9ba3-7c22fbbbe8eb")
+	)
+	(wire
+		(pts
+			(xy 38.1 76.2) (xy 38.1 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ebc7bcff-9507-464c-bceb-1963dd5e99bf")
+	)
+	(wire
+		(pts
+			(xy 72.39 40.64) (xy 72.39 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef6af7f9-3d08-4bd7-a7e4-0b12a80f5219")
 	)
 	(wire
 		(pts
@@ -3776,6 +4018,16 @@
 			(type default)
 		)
 		(uuid "f5885ee6-b894-48c3-986c-b4d08b18c0a6")
+	)
+	(wire
+		(pts
+			(xy 242.57 57.15) (xy 242.57 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7012de5-5388-43ec-a286-e846e17d9ea3")
 	)
 	(rectangle
 		(start 15.24 20.32)
@@ -3942,28 +4194,6 @@
 		)
 		(uuid "f84ddfd4-fb7d-4eeb-82e8-f7a710368b9e")
 	)
-	(global_label "MCU_ADC_SENSE"
-		(shape input)
-		(at 162.56 66.04 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "28d66cff-00c7-4593-b9c4-f2c5e380f08c")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 181.2084 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "MCU_I2C_SCL"
 		(shape input)
 		(at 198.12 41.91 0)
@@ -4055,7 +4285,6 @@
 	(global_label "MCU_ADC_SENSE"
 		(shape input)
 		(at 146.05 109.22 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4064,7 +4293,7 @@
 		)
 		(uuid "59b4a4f8-9ace-458b-b472-675ff42d4dd1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 127.4016 109.22 0)
+			(at 127.4016 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4165,7 +4394,6 @@
 	(global_label "MCU_I2C_SDA"
 		(shape input)
 		(at 146.05 114.3 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4174,7 +4402,7 @@
 		)
 		(uuid "a62936d8-a158-44fe-a670-85378241f73b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 130.4253 114.3 0)
+			(at 130.4253 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4209,7 +4437,6 @@
 	(global_label "MCU_I2C_SCL"
 		(shape input)
 		(at 146.05 111.76 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4218,7 +4445,7 @@
 		)
 		(uuid "d1c54c5b-a212-4a8f-8cce-a475ae2343a0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 130.4858 111.76 0)
+			(at 130.4858 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4286,7 +4513,7 @@
 			(uuid "66d69a17-1260-4285-929b-1900dbf328b7")
 		)
 		(instances
-			(project ""
+			(project "CTS_Solar_Panel_Load_Tester"
 				(path "/211b8366-2b1c-422c-86f1-173703c1ab0a"
 					(reference "#PWR05")
 					(unit 1)
@@ -4356,9 +4583,76 @@
 			(uuid "d27fcc02-ec09-475d-bbeb-810b71ac63f4")
 		)
 		(instances
-			(project ""
+			(project "CTS_Solar_Panel_Load_Tester"
 				(path "/211b8366-2b1c-422c-86f1-173703c1ab0a"
 					(reference "R_SHUNT3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 72.39 40.64 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0a235157-974a-4459-ad5c-c8fcca32e7c7")
+		(property "Reference" "#FLG02"
+			(at 70.485 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 68.58 40.6399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 72.39 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 72.39 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 72.39 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e792d0ac-5344-4ae8-9443-1ab0cc82426f")
+		)
+		(instances
+			(project "CTS_Solar_Panel_Load_Tester"
+				(path "/211b8366-2b1c-422c-86f1-173703c1ab0a"
+					(reference "#FLG02")
 					(unit 1)
 				)
 			)
@@ -4425,7 +4719,7 @@
 			(uuid "8ef5eb11-6786-48fa-a572-f22308a8574a")
 		)
 		(instances
-			(project ""
+			(project "CTS_Solar_Panel_Load_Tester"
 				(path "/211b8366-2b1c-422c-86f1-173703c1ab0a"
 					(reference "R3")
 					(unit 1)
@@ -4490,7 +4784,7 @@
 			(uuid "5d72f5a8-4864-42c0-a87d-b08b8025c78d")
 		)
 		(instances
-			(project ""
+			(project "CTS_Solar_Panel_Load_Tester"
 				(path "/211b8366-2b1c-422c-86f1-173703c1ab0a"
 					(reference "#PWR011")
 					(unit 1)
@@ -4555,7 +4849,7 @@
 			(uuid "61344f19-c9ec-4a6b-902b-4e9d604ee3e4")
 		)
 		(instances
-			(project ""
+			(project "CTS_Solar_Panel_Load_Tester"
 				(path "/211b8366-2b1c-422c-86f1-173703c1ab0a"
 					(reference "#PWR06")
 					(unit 1)
@@ -4621,7 +4915,7 @@
 			(uuid "298e6d69-692d-485b-a889-34c140adb5de")
 		)
 		(instances
-			(project ""
+			(project "CTS_Solar_Panel_Load_Tester"
 				(path "/211b8366-2b1c-422c-86f1-173703c1ab0a"
 					(reference "#PWR01")
 					(unit 1)
@@ -4686,7 +4980,7 @@
 			(uuid "81a956ce-cf3c-462e-b086-dbe31d52cf11")
 		)
 		(instances
-			(project ""
+			(project "CTS_Solar_Panel_Load_Tester"
 				(path "/211b8366-2b1c-422c-86f1-173703c1ab0a"
 					(reference "#PWR07")
 					(unit 1)
@@ -4756,7 +5050,7 @@
 			(uuid "fd257901-2c7c-4f3c-b3f2-8893a51d3548")
 		)
 		(instances
-			(project ""
+			(project "CTS_Solar_Panel_Load_Tester"
 				(path "/211b8366-2b1c-422c-86f1-173703c1ab0a"
 					(reference "J1")
 					(unit 1)
@@ -4826,7 +5120,7 @@
 			(uuid "b65cf960-7e34-40fc-99d5-0efccc7bf705")
 		)
 		(instances
-			(project ""
+			(project "CTS_Solar_Panel_Load_Tester"
 				(path "/211b8366-2b1c-422c-86f1-173703c1ab0a"
 					(reference "R2")
 					(unit 1)
@@ -4892,7 +5186,7 @@
 			(uuid "85bb2b16-9852-41f4-8754-9244ef990565")
 		)
 		(instances
-			(project ""
+			(project "CTS_Solar_Panel_Load_Tester"
 				(path "/211b8366-2b1c-422c-86f1-173703c1ab0a"
 					(reference "#PWR03")
 					(unit 1)
@@ -4901,8 +5195,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x07")
-		(at 157.48 111.76 0)
+		(lib_id "Connector_Generic:Conn_01x06")
+		(at 157.48 109.22 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4910,7 +5204,7 @@
 		(dnp no)
 		(uuid "629697fb-fc39-4faa-ba80-f330661ab9c4")
 		(property "Reference" "J3"
-			(at 160.02 110.4899 0)
+			(at 160.02 107.9499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4919,7 +5213,7 @@
 			)
 		)
 		(property "Value" "Conn_01x07"
-			(at 159.258 113.03 0)
+			(at 159.258 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4927,8 +5221,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical"
-			(at 157.48 111.76 0)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical"
+			(at 157.48 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4937,7 +5231,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 157.48 111.76 0)
+			(at 157.48 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4945,8 +5239,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x07, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 157.48 111.76 0)
+		(property "Description" "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 157.48 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4962,9 +5256,6 @@
 		)
 		(pin "3"
 			(uuid "19502c96-e0d7-436e-be75-7c349e808f9e")
-		)
-		(pin "7"
-			(uuid "0d347cf2-7547-4f56-b26d-ac6dcdcf31f4")
 		)
 		(pin "4"
 			(uuid "8519945e-3b4e-4288-affd-8dc37afbf563")
@@ -5046,7 +5337,7 @@
 			(uuid "932b8e8f-60ca-4b9f-ad13-627a021299e3")
 		)
 		(instances
-			(project ""
+			(project "CTS_Solar_Panel_Load_Tester"
 				(path "/211b8366-2b1c-422c-86f1-173703c1ab0a"
 					(reference "R1")
 					(unit 1)
@@ -5189,6 +5480,140 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 38.1 76.2 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "94247345-2263-42e1-a6a5-68b9643da250")
+		(property "Reference" "#FLG01"
+			(at 36.195 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 34.29 76.1999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 38.1 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 38.1 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 38.1 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e7fea6f5-6bbf-45f0-bb36-c53e6a7056a8")
+		)
+		(instances
+			(project "CTS_Solar_Panel_Load_Tester"
+				(path "/211b8366-2b1c-422c-86f1-173703c1ab0a"
+					(reference "#FLG01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 242.57 57.15 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "99f7eefa-b80b-408f-8e05-062b40aae5ca")
+		(property "Reference" "#FLG03"
+			(at 240.665 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 238.76 57.1499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 242.57 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 242.57 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 242.57 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ff2700a6-092a-4af2-b8c2-77a16fbb66d6")
+		)
+		(instances
+			(project "CTS_Solar_Panel_Load_Tester"
+				(path "/211b8366-2b1c-422c-86f1-173703c1ab0a"
+					(reference "#FLG03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 40.64 82.55 0)
 		(unit 1)
@@ -5286,7 +5711,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Potentiometer_Custom:3310C101102L"
+		(property "Footprint" "PotentiometerCustom:3310C101102L"
 			(at 151.13 57.15 0)
 			(effects
 				(font
@@ -5323,7 +5748,7 @@
 			(uuid "f990713d-39a6-40aa-a446-eed2a890f442")
 		)
 		(instances
-			(project ""
+			(project "CTS_Solar_Panel_Load_Tester"
 				(path "/211b8366-2b1c-422c-86f1-173703c1ab0a"
 					(reference "RV1")
 					(unit 1)
@@ -5389,7 +5814,7 @@
 			(uuid "b692a092-e2a9-4f84-84eb-6e9e33f863d6")
 		)
 		(instances
-			(project ""
+			(project "CTS_Solar_Panel_Load_Tester"
 				(path "/211b8366-2b1c-422c-86f1-173703c1ab0a"
 					(reference "#PWR09")
 					(unit 1)
@@ -5459,7 +5884,7 @@
 			(uuid "9bb9800d-dcac-450c-ae73-df96dd5f64df")
 		)
 		(instances
-			(project ""
+			(project "CTS_Solar_Panel_Load_Tester"
 				(path "/211b8366-2b1c-422c-86f1-173703c1ab0a"
 					(reference "J2")
 					(unit 1)
@@ -5469,7 +5894,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 149.86 119.38 270)
+		(at 149.86 116.84 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5478,7 +5903,7 @@
 		(fields_autoplaced yes)
 		(uuid "dda13a4c-00d7-47f9-9229-534b9b085d39")
 		(property "Reference" "#PWR014"
-			(at 143.51 119.38 0)
+			(at 149.86 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5487,16 +5912,15 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 146.05 119.3799 90)
+			(at 149.86 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 149.86 119.38 0)
+			(at 149.86 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5505,7 +5929,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 149.86 119.38 0)
+			(at 149.86 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5514,7 +5938,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 149.86 119.38 0)
+			(at 149.86 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5580,7 +6004,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "STM32 Blue Pill ; KLC compliant"
 			(at 74.93 71.12 0)
 			(effects
 				(font
@@ -5710,7 +6134,7 @@
 			(uuid "65a1c1cf-16f7-4702-bd6e-d33dd3c40788")
 		)
 		(instances
-			(project ""
+			(project "CTS_Solar_Panel_Load_Tester"
 				(path "/211b8366-2b1c-422c-86f1-173703c1ab0a"
 					(reference "U2")
 					(unit 1)
@@ -5776,7 +6200,7 @@
 			(uuid "663ae91d-806e-4016-a8e1-7930c514f308")
 		)
 		(instances
-			(project ""
+			(project "CTS_Solar_Panel_Load_Tester"
 				(path "/211b8366-2b1c-422c-86f1-173703c1ab0a"
 					(reference "#PWR08")
 					(unit 1)
@@ -5842,7 +6266,7 @@
 			(uuid "b67c879c-e2a9-4471-b8c5-71045d753219")
 		)
 		(instances
-			(project ""
+			(project "CTS_Solar_Panel_Load_Tester"
 				(path "/211b8366-2b1c-422c-86f1-173703c1ab0a"
 					(reference "#PWR02")
 					(unit 1)
@@ -5973,7 +6397,7 @@
 			(uuid "8617812e-79ef-4304-a2b1-72373e6fe8b3")
 		)
 		(instances
-			(project ""
+			(project "CTS_Solar_Panel_Load_Tester"
 				(path "/211b8366-2b1c-422c-86f1-173703c1ab0a"
 					(reference "#PWR010")
 					(unit 1)
@@ -6061,7 +6485,7 @@
 			(uuid "99ca1b4f-c261-433d-91db-2a44a60dc779")
 		)
 		(instances
-			(project ""
+			(project "CTS_Solar_Panel_Load_Tester"
 				(path "/211b8366-2b1c-422c-86f1-173703c1ab0a"
 					(reference "U1")
 					(unit 1)
