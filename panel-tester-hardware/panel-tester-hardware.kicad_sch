@@ -4,10 +4,6 @@
 	(generator_version "8.0")
 	(uuid "23c26bde-ab5f-4264-8e38-0a6c77689fb6")
 	(paper "USLetter")
-	(title_block
-		(date "2024-03-15")
-		(rev "Rev 0")
-	)
 	(lib_symbols
 		(symbol "Amplifier_Operational:LM358"
 			(pin_names
@@ -4662,7 +4658,7 @@
 		)
 		(uuid "6a0c503b-ce66-4d60-b5e1-c57f2c4e9e0e")
 	)
-	(text "Microcontroller:\nMeasure ADC voltage, control \ncurrent,output to computer \nfor logging"
+	(text "Microcontroller:\nMeasure ADC voltage, control \ncurrent, log to computer "
 		(exclude_from_sim no)
 		(at 230.124 26.162 0)
 		(effects

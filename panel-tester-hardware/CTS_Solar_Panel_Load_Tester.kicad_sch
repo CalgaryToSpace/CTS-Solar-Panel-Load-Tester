@@ -5562,7 +5562,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "BluePill:YAAJ_BluePill_2"
+		(property "Footprint" ""
 			(at 73.025 46.99 90)
 			(effects
 				(font
