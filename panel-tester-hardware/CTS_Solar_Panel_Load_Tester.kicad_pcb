@@ -5985,7 +5985,7 @@
 		)
 	)
 	(gr_text "RX"
-		(at 99.25 108.5 0)
+		(at 99.25 107.5 0)
 		(layer "F.SilkS")
 		(uuid "1cb32adf-5c82-4582-a968-18ae2cc8efb0")
 		(effects
@@ -6009,7 +6009,7 @@
 		)
 	)
 	(gr_text "GND"
-		(at 99.25 111 0)
+		(at 99.25 110 0)
 		(layer "F.SilkS")
 		(uuid "51980190-4efc-45c1-8ea7-eb11153d6ed5")
 		(effects
@@ -6120,7 +6120,7 @@
 		)
 	)
 	(gr_text "TX"
-		(at 99.25 106 0)
+		(at 99.25 105 0)
 		(layer "F.SilkS")
 		(uuid "fafd2f58-0bd4-465d-b06a-29d1e6be3c49")
 		(effects
@@ -6346,7 +6346,15 @@
 		(width 0.2)
 		(layer "F.Cu")
 		(net 3)
-		(uuid "275b8447-cd74-4519-998f-7997f342ceea")
+		(uuid "223235de-4ef0-4b3e-9611-51e093da9256")
+	)
+	(segment
+		(start 127.6125 97.9875)
+		(end 127.2 98.4)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 3)
+		(uuid "4299c8c5-176c-4a55-b818-9d41c9cf4775")
 	)
 	(segment
 		(start 127.2 98.4)
@@ -6355,14 +6363,6 @@
 		(layer "F.Cu")
 		(net 3)
 		(uuid "899f1f41-b209-49eb-a476-77b8fcaf1803")
-	)
-	(segment
-		(start 127.6125 97.9875)
-		(end 127.2 98.4)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 3)
-		(uuid "f218a49e-e5e6-49fb-a789-e89b7477bb54")
 	)
 	(via
 		(at 127 100)
@@ -6707,6 +6707,54 @@
 		(layer "F.Cu")
 		(net 9)
 		(uuid "a3b3c3e5-d097-482b-b4e6-d6d642c0358e")
+	)
+	(segment
+		(start 106.54 104.46)
+		(end 97 104.46)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 15)
+		(uuid "6dc638eb-e63a-4def-a8d2-524172b305fa")
+	)
+	(segment
+		(start 109.82 80.12)
+		(end 109.82 101.18)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 15)
+		(uuid "92e54267-6d48-4a59-ac31-e37b43910d39")
+	)
+	(segment
+		(start 109.82 101.18)
+		(end 106.54 104.46)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 15)
+		(uuid "cc9928cc-d6d6-4463-a87b-e477a482af22")
+	)
+	(segment
+		(start 112.36 100.84)
+		(end 106.2 107)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 22)
+		(uuid "3c50abc6-c93d-45d0-a4e4-ddbb89025731")
+	)
+	(segment
+		(start 106.2 107)
+		(end 97 107)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 22)
+		(uuid "994f7683-79cc-4823-932d-f9b2b0113704")
+	)
+	(segment
+		(start 112.36 80.12)
+		(end 112.36 100.84)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 22)
+		(uuid "ed36ef16-7f9b-4951-98a7-52345bf0de97")
 	)
 	(zone
 		(net 8)
