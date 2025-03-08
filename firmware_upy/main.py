@@ -2,7 +2,7 @@
 
 from typing import Literal
 
-from machine import I2C, Pin
+from machine import ADC, I2C, Pin
 import time
 import json
 
@@ -11,6 +11,11 @@ from ina219 import INA219
 INA_SHUNT_OMHS = 0.100  # R100 = 0.1 ohms
 ina_i2c = I2C(1, scl=Pin(15), sda=Pin(14), freq=100_000)
 ina: INA219  # Constructed/initialized in `init_ina()`
+
+ADC_PIN = ADC(Pin(26))
+# Conversion factor for RP2040 ADC (12-bit resolution, 3.3V reference)
+ADC_CONVERSION_FACTOR = 3.3 / 65535
+ADC_VOLTAGE_DIVIDER_RATIO = 4.7 / (4.7 + 18)  # 4k7 bottom, 18k top
 
 
 def init_ina() -> None:
@@ -38,12 +43,23 @@ def reset() -> None:
     init()
 
 
+def read_adc_voltage() -> float:
+    """Reads the voltage from the ADC pin, of the solar panel.
+
+    Reverses the voltage divider calculation.
+    """
+    raw_value = ADC_PIN.read_u16()
+    voltage = raw_value * ADC_CONVERSION_FACTOR / ADC_VOLTAGE_DIVIDER_RATIO
+    return voltage
+
+
 def log_ina_json(
     timestamp_ms: int | None = None,
     *,
     enable_fields: tuple[
-        Literal["current_mA", "bus_voltage_mV", "shunt_voltage_mV"], ...
-    ] = ("current_mA",),
+        Literal["current_mA", "bus_voltage_mV", "shunt_voltage_mV", "adc_voltage_mV"],
+        ...,
+    ] = ("current_mA", "bus_voltage_mV", "adc_voltage_mV"),
 ) -> None:
     shunt_mV = ina.shunt_voltage * 1000
 
@@ -55,6 +71,8 @@ def log_ina_json(
         data["bus_voltage_mV"] = ina.bus_voltage
     if "shunt_voltage_mV" in enable_fields:
         data["shunt_voltage_mV"] = shunt_mV
+    if "adc_voltage_mV" in enable_fields:
+        data["adc_voltage_mV"] = read_adc_voltage()
 
     if timestamp_ms is not None:
         data["timestamp_ms"] = timestamp_ms
@@ -109,6 +127,9 @@ Available commands:
     - exit()  # Doesn't really do anything.
     - init() AKA reset()
         -> Initialize the shift registers and INA219.
+    - read_adc_voltage
+    - log_ina_json
+    - sleep_ms_and_log_ina_json
           
     """)
 
