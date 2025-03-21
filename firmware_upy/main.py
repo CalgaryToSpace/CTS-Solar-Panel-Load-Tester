@@ -12,7 +12,7 @@ INA_SHUNT_OMHS = 0.100  # R100 = 0.1 ohms
 ina_i2c = I2C(1, scl=Pin(15), sda=Pin(14), freq=100_000)
 ina: INA219  # Constructed/initialized in `init_ina()`
 
-ADC_PIN = ADC(Pin(26))
+ADC_PIN = ADC(Pin(29))
 # Conversion factor for RP2040 ADC (12-bit resolution, 3.3V reference)
 ADC_CONVERSION_FACTOR = 3.3 / 65535
 ADC_VOLTAGE_DIVIDER_RATIO = 4.7 / (4.7 + 18)  # 4k7 bottom, 18k top
@@ -126,10 +126,9 @@ def print_available_commands() -> None:
 Available commands:
     - exit()  # Doesn't really do anything.
     - init() AKA reset()
-        -> Initialize the shift registers and INA219.
     - read_adc_voltage
-    - log_ina_json
-    - sleep_ms_and_log_ina_json
+    - log_ina_json()
+    - sleep_ms_and_log_ina_json(sleep_time_ms: int, log_period_ms: int = 250)
           
     """)
 
@@ -163,7 +162,9 @@ def main() -> None:
     init()
 
     while 1:
-        prompt_and_execute()
+        # prompt_and_execute()
+        log_ina_json()
+        time.sleep_ms(500)
 
 
 while True:
