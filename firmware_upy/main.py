@@ -3,6 +3,7 @@
 from typing import Literal
 
 from machine import ADC, I2C, Pin
+from neopixel import NeoPixel
 import time
 import json
 
@@ -16,6 +17,8 @@ ADC_PIN = ADC(Pin(29))
 # Conversion factor for RP2040 ADC (12-bit resolution, 3.3V reference)
 ADC_CONVERSION_FACTOR = 3.3 / 65535
 ADC_VOLTAGE_DIVIDER_RATIO = 4.7 / (4.7 + 18)  # 4k7 bottom, 18k top
+
+ONBOARD_LED_PIN = Pin(16, Pin.OUT)
 
 
 def init_ina() -> None:
@@ -136,6 +139,13 @@ Available commands:
 def help() -> None:
     print_available_commands()
 
+def set_led_color(r: int, g: int, b: int) -> None:
+    """Display a color on the LED.
+    Values should be between 0 and 255.
+    """
+    np = NeoPixel(ONBOARD_LED_PIN, 1)
+    np[0] = (r, g, b)
+    np.write()
 
 def prompt_and_execute() -> None:
     print("Enter a command, or use 'help':")
@@ -161,10 +171,20 @@ def prompt_and_execute() -> None:
 def main() -> None:
     init()
 
+    PERIOD_MS = 500
+
     while 1:
         # prompt_and_execute()
         log_ina_json()
-        time.sleep_ms(500)
+
+        if ina.bus_voltage < 0.5:
+            set_led_color(255, 0, 0)
+        else:
+            set_led_color(0, 0, 255)
+            
+        time.sleep_ms(50)
+        set_led_color(0, 0, 0)
+        time.sleep_ms(PERIOD_MS - 50)
 
 
 while True:
