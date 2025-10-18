@@ -35,3 +35,5 @@ fp-info-cache
 # Exported BOM files
 *.xml
 *.csv
+Draft3.asc
+panel-tester-hardware/~$solarpaneldata.xlsx
