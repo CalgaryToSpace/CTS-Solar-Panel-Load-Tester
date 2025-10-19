@@ -1,0 +1,11 @@
+Version 4
+SymbolType CELL
+LINE Normal -65 -64 -65 -47
+LINE Normal 64 -64 64 -47
+RECTANGLE Normal 64 48 -65 -47
+PIN 64 -64 VTOP 8
+PINATTR PinName pos
+PINATTR SpiceOrder 1
+PIN -64 -64 VBOTTOM 8
+PINATTR PinName neg
+PINATTR SpiceOrder 2
