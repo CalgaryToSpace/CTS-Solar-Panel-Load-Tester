@@ -37,3 +37,4 @@ fp-info-cache
 *.csv
 Draft3.asc
 panel-tester-hardware/~$solarpaneldata.xlsx
+panel-tester-hardware/LTSpice/~$solarpaneldata.xlsx
