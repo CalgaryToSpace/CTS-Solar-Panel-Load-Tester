@@ -632,7 +632,7 @@
 	(footprint "Resistor_SMD:R_2512_6332Metric_Pad1.40x3.35mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "25b2dd7a-990e-4196-b419-65b799c4340f")
-		(at 145.9325 81.555)
+		(at 150.5 61)
 		(descr "Resistor SMD 2512 (6332 Metric), square (rectangular) end terminal, IPC-7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor handsolder")
 		(property "Reference" "R_SHUNT3"
@@ -831,7 +831,7 @@
 	(footprint "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.95x4.9mm_Mask2.71x3.4mm"
 		(layer "F.Cu")
 		(uuid "33493682-77b9-4fb8-8a36-58eb9cbaf620")
-		(at 168.9375 95.095)
+		(at 165.32 88.35)
 		(descr "SOIC, 8 Pin (http://www.ti.com/lit/ds/symlink/lm5017.pdf#page=31), generated with kicad-footprint-generator ipc_gullwing_generator.py")
 		(tags "SOIC SO")
 		(property "Reference" "U3"
@@ -1257,7 +1257,7 @@
 	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "3db4e224-2eef-4043-baa8-c0df13ea9b78")
-		(at 157.9775 68.035)
+		(at 167 74.96)
 		(descr "Through hole straight pin header, 1x02, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x02 2.54mm single row")
 		(property "Reference" "J2"
@@ -1510,7 +1510,7 @@
 	(footprint "Package_TO_SOT_SMD:SOT-23"
 		(layer "F.Cu")
 		(uuid "432cd2a3-5328-438d-9a62-873a8c93ce59")
-		(at 169 103)
+		(at 158.5 87.5)
 		(descr "SOT, 3 Pin (JEDEC TO-236 Var AB https://www.jedec.org/document_search?search_api_views_fulltext=TO-236), generated with kicad-footprint-generator ipc_gullwing_generator.py")
 		(tags "SOT TO_SOT_SMD")
 		(property "Reference" "Q2"
@@ -1835,7 +1835,7 @@
 	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "48b39d91-1e62-40b8-baea-4698875d4a70")
-		(at 140.5 105)
+		(at 145 100)
 		(descr "Through hole straight pin header, 1x01, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x01 2.54mm single row")
 		(property "Reference" "R1-2"
@@ -2077,7 +2077,7 @@
 	(footprint "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
 		(layer "F.Cu")
 		(uuid "6bd690cf-8385-4976-9b18-f1dd4d453d25")
-		(at 169.8825 81.555)
+		(at 166 61)
 		(descr "SOIC, 8 Pin (JEDEC MS-012AA, https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/soic_narrow-r/r_8.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py")
 		(tags "SOIC SO")
 		(property "Reference" "U1"
@@ -2092,7 +2092,7 @@
 			)
 		)
 		(property "Value" "INA219AxD"
-			(at 0 3.4 0)
+			(at 0 3.59 0)
 			(layer "F.Fab")
 			(uuid "49540f9f-8182-42a9-9342-1e095bfdf339")
 			(effects
@@ -2442,7 +2442,7 @@
 	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "70c8aa9c-c683-45ed-9ae5-1beb328cfcb9")
-		(at 147 100.5)
+		(at 163 96)
 		(descr "Through hole straight pin header, 1x01, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x01 2.54mm single row")
 		(property "Reference" "RF1-2"
@@ -2684,7 +2684,7 @@
 	(footprint "TerminalBlock:TerminalBlock_bornier-2_P5.08mm"
 		(layer "F.Cu")
 		(uuid "9830604d-88bd-4f3d-bbd8-f865d9d768ec")
-		(at 147.3675 70.265)
+		(at 134.46 62)
 		(descr "simple 2-pin terminal block, pitch 5.08mm, revamped version of bornier2")
 		(tags "terminal block bornier2")
 		(property "Reference" "J1"
@@ -3380,7 +3380,7 @@
 	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "ae876f61-eb8e-4c90-9b47-803bbd372e2a")
-		(at 153 100.5)
+		(at 169 96)
 		(descr "Through hole straight pin header, 1x01, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x01 2.54mm single row")
 		(property "Reference" "RF1-1"
@@ -3919,7 +3919,7 @@
 	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "edc93fcf-bc30-4eec-9cbf-eaf1d76815e6")
-		(at 140.5 98.5)
+		(at 145 93.5)
 		(descr "Through hole straight pin header, 1x01, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x01 2.54mm single row")
 		(property "Reference" "R1-1"
@@ -4170,8 +4170,8 @@
 		(uuid "3fa4da79-b253-44e1-89f5-101bb0cdc125")
 	)
 	(segment
-		(start 140.5 105)
-		(end 138.934001 105)
+		(start 145 100)
+		(end 143.434001 100)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 1)
