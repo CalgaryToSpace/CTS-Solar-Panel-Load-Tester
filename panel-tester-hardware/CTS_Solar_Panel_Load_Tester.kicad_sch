@@ -3059,7 +3059,7 @@
 		(uuid e1454517-c864-4b94-bdb1-aaad6027ce6f)
 	)
 	(rectangle
-		(start 195.58 86.36)
+		(start 189.23 86.36)
 		(end 264.16 121.92)
 		(stroke
 			(width 0)
@@ -3174,10 +3174,34 @@
 		(uuid "f84ddfd4-fb7d-4eeb-82e8-f7a710368b9e")
 	)
 	(junction
+		(at 210.82 137.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "08517429-edc3-4416-a55a-ad3a9870a5d0")
+	)
+	(junction
 		(at 237.49 100.33)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5966f19a-5e1c-4e54-b2f1-3d71a6e24589")
+	)
+	(junction
+		(at 223.52 137.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7b4e77cf-ffc0-4c47-8d87-4d44eee91c7a")
+	)
+	(junction
+		(at 237.49 137.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "835cefd5-ea2c-478b-8381-156a6be9a566")
+	)
+	(junction
+		(at 156.21 137.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "956642ed-a7d6-49f5-8b71-ecd4d712d889")
 	)
 	(junction
 		(at 148.59 36.83)
@@ -3186,10 +3210,38 @@
 		(uuid "acd6ea95-97f5-4d7d-b423-49a1cb0eb59a")
 	)
 	(junction
+		(at 184.15 137.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c174e2d2-80d4-470b-8272-786581c37b51")
+	)
+	(junction
+		(at 198.12 137.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c3c64c7a-b103-4108-ae60-b33115379ec4")
+	)
+	(junction
+		(at 170.18 137.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d1ca813e-025f-4f6b-a408-62ac45ac6051")
+	)
+	(junction
 		(at 170.18 44.45)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ee5626d0-0643-42ed-8bb2-09412d803adc")
+	)
+	(wire
+		(pts
+			(xy 156.21 137.16) (xy 160.02 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02e0dc75-d226-452e-8f01-4198fac7cee3")
 	)
 	(wire
 		(pts
@@ -3200,6 +3252,16 @@
 			(type default)
 		)
 		(uuid "0379089c-0a85-4193-a634-9a93701cca42")
+	)
+	(wire
+		(pts
+			(xy 143.51 146.05) (xy 143.51 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "06caca2b-092b-4e85-8b8c-a1b61a9adb97")
 	)
 	(wire
 		(pts
@@ -3223,6 +3285,26 @@
 	)
 	(wire
 		(pts
+			(xy 139.7 137.16) (xy 156.21 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1045bf11-b9c6-47d5-ac77-a92970630854")
+	)
+	(wire
+		(pts
+			(xy 223.52 137.16) (xy 223.52 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10b288cc-144f-4341-bf4c-0f5484750445")
+	)
+	(wire
+		(pts
 			(xy 231.14 106.68) (xy 229.87 106.68)
 		)
 		(stroke
@@ -3233,6 +3315,16 @@
 	)
 	(wire
 		(pts
+			(xy 184.15 137.16) (xy 187.96 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c4e4625-c12e-4ed4-ae7c-fd0d6a5c7409")
+	)
+	(wire
+		(pts
 			(xy 219.71 34.29) (xy 229.87 34.29)
 		)
 		(stroke
@@ -3240,6 +3332,16 @@
 			(type default)
 		)
 		(uuid "22888827-a069-4ec6-ae03-f7f586df6540")
+	)
+	(wire
+		(pts
+			(xy 170.18 137.16) (xy 170.18 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "233868bb-f4b3-4921-a1a4-9376a90b76da")
 	)
 	(wire
 		(pts
@@ -3280,6 +3382,16 @@
 			(type default)
 		)
 		(uuid "2bfd0ac1-f444-4a13-9329-f0c664a19a12")
+	)
+	(wire
+		(pts
+			(xy 156.21 137.16) (xy 156.21 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "35af3cc8-d5a5-40ad-baa6-613615b36466")
 	)
 	(wire
 		(pts
@@ -3353,6 +3465,16 @@
 	)
 	(wire
 		(pts
+			(xy 167.64 137.16) (xy 170.18 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4b49327d-a531-4641-946c-d6cd573e8805")
+	)
+	(wire
+		(pts
 			(xy 238.76 66.04) (xy 242.57 66.04)
 		)
 		(stroke
@@ -3373,6 +3495,16 @@
 	)
 	(wire
 		(pts
+			(xy 237.49 142.24) (xy 237.49 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b6dceef-ccc3-436d-8ce7-7291d955a11a")
+	)
+	(wire
+		(pts
 			(xy 170.18 44.45) (xy 170.18 46.99)
 		)
 		(stroke
@@ -3390,6 +3522,16 @@
 			(type default)
 		)
 		(uuid "65f12336-705c-4977-bdd5-12e1cc508835")
+	)
+	(wire
+		(pts
+			(xy 198.12 137.16) (xy 198.12 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68201803-e5ac-4740-8d91-f69456c8a834")
 	)
 	(wire
 		(pts
@@ -3423,6 +3565,16 @@
 	)
 	(wire
 		(pts
+			(xy 223.52 137.16) (xy 228.6 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a95c950-be47-4238-9b7b-0b71d750666d")
+	)
+	(wire
+		(pts
 			(xy 219.71 45.72) (xy 229.87 45.72)
 		)
 		(stroke
@@ -3430,6 +3582,16 @@
 			(type default)
 		)
 		(uuid "7b7ef360-73c4-4931-8486-f916b5cf2701")
+	)
+	(wire
+		(pts
+			(xy 181.61 137.16) (xy 184.15 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "82814b5e-c511-4fce-b3e7-9bd69d48ba25")
 	)
 	(wire
 		(pts
@@ -3483,6 +3645,16 @@
 	)
 	(wire
 		(pts
+			(xy 236.22 137.16) (xy 237.49 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8b178aea-d796-41ef-ae85-63ad4b63eda6")
+	)
+	(wire
+		(pts
 			(xy 222.25 48.26) (xy 231.14 48.26)
 		)
 		(stroke
@@ -3490,6 +3662,16 @@
 			(type default)
 		)
 		(uuid "8d0475cb-30a5-416e-82f9-3633f6ccd435")
+	)
+	(wire
+		(pts
+			(xy 250.19 137.16) (xy 251.46 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d65d039-4d9a-499c-9d23-a2dc4141beeb")
 	)
 	(wire
 		(pts
@@ -3520,6 +3702,16 @@
 			(type default)
 		)
 		(uuid "993286a6-b8db-43ae-8379-d80a82c5fdb5")
+	)
+	(wire
+		(pts
+			(xy 195.58 137.16) (xy 198.12 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a797922-373f-4d7d-a7f0-ff32c24b6fab")
 	)
 	(wire
 		(pts
@@ -3563,6 +3755,36 @@
 	)
 	(wire
 		(pts
+			(xy 210.82 137.16) (xy 214.63 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a9284f9f-74d4-47c3-8a8b-d350161975ba")
+	)
+	(wire
+		(pts
+			(xy 251.46 137.16) (xy 251.46 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b1308c89-9a28-4de5-926e-d641fd0d4003")
+	)
+	(wire
+		(pts
+			(xy 237.49 137.16) (xy 242.57 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b29e46a4-34a3-4b8b-8731-5fee0dfef836")
+	)
+	(wire
+		(pts
 			(xy 247.65 109.22) (xy 255.27 109.22)
 		)
 		(stroke
@@ -3570,6 +3792,36 @@
 			(type default)
 		)
 		(uuid "b57f91a1-0a23-47ba-99ac-16ca168f40a0")
+	)
+	(wire
+		(pts
+			(xy 222.25 137.16) (xy 223.52 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "badbea63-3ef5-425f-8c55-995a49c654bf")
+	)
+	(wire
+		(pts
+			(xy 143.51 149.86) (xy 146.05 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf8da969-9005-410e-b721-1f22b40bf7d7")
+	)
+	(wire
+		(pts
+			(xy 170.18 137.16) (xy 173.99 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c09843aa-be4f-425f-91a6-9ed397c6b68a")
 	)
 	(wire
 		(pts
@@ -3583,6 +3835,16 @@
 	)
 	(wire
 		(pts
+			(xy 184.15 137.16) (xy 184.15 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c5030e70-ae36-4841-964c-3be3c49aec7f")
+	)
+	(wire
+		(pts
 			(xy 128.27 36.83) (xy 128.27 38.1)
 		)
 		(stroke
@@ -3590,6 +3852,36 @@
 			(type default)
 		)
 		(uuid "c54a1cce-3ff8-4368-8d18-a509d14c4163")
+	)
+	(wire
+		(pts
+			(xy 210.82 137.16) (xy 210.82 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c767201f-14c4-4290-909e-a5692641d511")
+	)
+	(wire
+		(pts
+			(xy 139.7 138.43) (xy 139.7 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d05d0210-afb8-49bb-b1cd-ce94c1d8a1b1")
+	)
+	(wire
+		(pts
+			(xy 198.12 137.16) (xy 201.93 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d90c7c4d-44aa-4554-8b70-9d0212a5434a")
 	)
 	(wire
 		(pts
@@ -3610,6 +3902,26 @@
 			(type default)
 		)
 		(uuid "e1fffa18-9606-4f6c-a381-fa79beeed4f4")
+	)
+	(wire
+		(pts
+			(xy 209.55 137.16) (xy 210.82 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed09cb80-2c82-4e05-b538-1acca7881f68")
+	)
+	(wire
+		(pts
+			(xy 139.7 146.05) (xy 143.51 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f32717c7-b330-49c4-9f3f-0705e24d1ccc")
 	)
 	(wire
 		(pts
@@ -3669,6 +3981,50 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RAMP"
+		(shape input)
+		(at 251.46 137.16 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "35f75b3b-cd3e-4c7b-8365-8f75bcd46e61")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 259.5252 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RAMP"
+		(shape input)
+		(at 198.12 101.6 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3988ee16-af96-4a38-8ff3-a96c36196bb0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 190.0548 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -3959,6 +4315,146 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 223.52 146.05 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "045cb2ec-b33c-499b-b9ba-e85c768c6e23")
+		(property "Reference" "R6"
+			(at 226.06 144.7799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "R"
+			(at 226.06 147.3199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 221.742 146.05 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 223.52 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 223.52 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "41596a45-8f96-48f4-ab47-689d6f221da8")
+		)
+		(pin "2"
+			(uuid "ac480a37-ff6c-4b67-96e1-4952452fc1b1")
+		)
+		(instances
+			(project "CTS_Solar_Panel_Load_Tester"
+				(path "/211b8366-2b1c-422c-86f1-173703c1ab0a"
+					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 237.49 146.05 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "09af9b3c-4a7b-43d8-9f43-d5eb538fd82f")
+		(property "Reference" "R7"
+			(at 240.03 144.7799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "R"
+			(at 240.03 147.3199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 235.712 146.05 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 237.49 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 237.49 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f7f7f21c-685f-45d8-ad12-b4975cf63ad8")
+		)
+		(pin "2"
+			(uuid "3c07062d-f0ed-47a5-b41c-3b68e192d920")
+		)
+		(instances
+			(project "CTS_Solar_Panel_Load_Tester"
+				(path "/211b8366-2b1c-422c-86f1-173703c1ab0a"
+					(reference "R7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_01x20_Pin")
 		(at 62.23 76.2 0)
 		(unit 1)
@@ -4145,6 +4641,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 184.15 146.05 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "266d6974-e5bf-4808-ba47-0bcaf525e467")
+		(property "Reference" "R3"
+			(at 186.69 144.7799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "R"
+			(at 186.69 147.3199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 182.372 146.05 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 184.15 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 184.15 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "73e5dfd9-910d-410c-90a0-0560b3f0cd16")
+		)
+		(pin "2"
+			(uuid "22e4a45b-4ad1-4f40-a846-83f633456d9c")
+		)
+		(instances
+			(project "CTS_Solar_Panel_Load_Tester"
+				(path "/211b8366-2b1c-422c-86f1-173703c1ab0a"
+					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 222.25 38.1 0)
 		(unit 1)
@@ -4275,6 +4841,142 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 251.46 146.05 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "37c0d80e-66bc-4813-a22f-dfaa33b8ab1a")
+		(property "Reference" "R8"
+			(at 254 144.7799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "R"
+			(at 254 147.3199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 249.682 146.05 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 251.46 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 251.46 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e8cb24b1-ea52-4814-95ad-9132b616fcca")
+		)
+		(pin "2"
+			(uuid "820ae963-936d-4e9f-95d9-0219f7577f6d")
+		)
+		(instances
+			(project "CTS_Solar_Panel_Load_Tester"
+				(path "/211b8366-2b1c-422c-86f1-173703c1ab0a"
+					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 146.05 149.86 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "37ddfef3-512a-40fc-99c7-1afb63d6d443")
+		(property "Reference" "#PWR09"
+			(at 146.05 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 146.05 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 146.05 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 146.05 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 146.05 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e9618b7b-8e22-4c41-b28f-993e416bf751")
+		)
+		(instances
+			(project "CTS_Solar_Panel_Load_Tester"
+				(path "/211b8366-2b1c-422c-86f1-173703c1ab0a"
+					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_01x01_Pin")
 		(at 247.65 114.3 90)
 		(unit 1)
@@ -4333,6 +5035,74 @@
 			(project ""
 				(path "/211b8366-2b1c-422c-86f1-173703c1ab0a"
 					(reference "RF1-1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 177.8 137.16 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "445619d8-de98-4f58-9dda-43ab014ab5cf")
+		(property "Reference" "R10"
+			(at 177.8 130.81 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R"
+			(at 177.8 133.35 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 177.8 138.938 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 177.8 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 177.8 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "de158667-fff7-4ca6-be05-776cb5c2118f")
+		)
+		(pin "2"
+			(uuid "d3c47ebc-d6de-40cd-8bb3-0998ec4ab4ab")
+		)
+		(instances
+			(project "CTS_Solar_Panel_Load_Tester"
+				(path "/211b8366-2b1c-422c-86f1-173703c1ab0a"
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -4415,6 +5185,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 163.83 137.16 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5207a0b3-258f-452c-a9c3-4d86450567ec")
+		(property "Reference" "R9"
+			(at 163.83 130.81 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R"
+			(at 163.83 133.35 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 163.83 138.938 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 163.83 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 163.83 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a95cfa4e-7895-4566-99b6-d835de1fd674")
+		)
+		(pin "2"
+			(uuid "074e5ac3-efb5-4447-b1b9-8e10f507d74f")
+		)
+		(instances
+			(project "CTS_Solar_Panel_Load_Tester"
+				(path "/211b8366-2b1c-422c-86f1-173703c1ab0a"
+					(reference "R9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Screw_Terminal_01x02")
 		(at 237.49 33.02 0)
 		(unit 1)
@@ -4479,6 +5317,146 @@
 			(project "CTS_Solar_Panel_Load_Tester"
 				(path "/211b8366-2b1c-422c-86f1-173703c1ab0a"
 					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 170.18 146.05 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "56a59ba9-2734-451e-a0bf-336a8e07475d")
+		(property "Reference" "R2"
+			(at 172.72 144.7799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "R"
+			(at 172.72 147.3199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 168.402 146.05 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 170.18 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 170.18 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "310d7445-2721-4342-8869-82d8852e7bbb")
+		)
+		(pin "2"
+			(uuid "21635002-5907-4c96-bdad-39b560a4be23")
+		)
+		(instances
+			(project "CTS_Solar_Panel_Load_Tester"
+				(path "/211b8366-2b1c-422c-86f1-173703c1ab0a"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 156.21 146.05 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "586416ef-9d66-414b-ad98-4358274ef411")
+		(property "Reference" "R1"
+			(at 158.75 144.7799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "R"
+			(at 158.75 147.3199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 154.432 146.05 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 156.21 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 156.21 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "48b40a4b-8226-4ea3-a579-fe5dccdb31db")
+		)
+		(pin "2"
+			(uuid "8e2b27d6-52da-4dad-a44b-b740ac6eb1b4")
+		)
+		(instances
+			(project ""
+				(path "/211b8366-2b1c-422c-86f1-173703c1ab0a"
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -4696,6 +5674,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 210.82 146.05 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8e50859d-e215-442d-8ecf-b2f8868431d5")
+		(property "Reference" "R5"
+			(at 213.36 144.7799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "R"
+			(at 213.36 147.3199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 209.042 146.05 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 210.82 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 210.82 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c0f669f6-06d2-4088-8425-20770bb483e0")
+		)
+		(pin "2"
+			(uuid "c5f66c40-79b5-4b07-8920-afd0a12ee912")
+		)
+		(instances
+			(project "CTS_Solar_Panel_Load_Tester"
+				(path "/211b8366-2b1c-422c-86f1-173703c1ab0a"
+					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3V3")
 		(at 238.76 63.5 90)
 		(unit 1)
@@ -4757,6 +5805,74 @@
 			(project "CTS_Solar_Panel_Load_Tester"
 				(path "/211b8366-2b1c-422c-86f1-173703c1ab0a"
 					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 191.77 137.16 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "93ba270e-3bb7-4d63-ba72-ff6b7a9e0204")
+		(property "Reference" "R11"
+			(at 191.77 130.81 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R"
+			(at 191.77 133.35 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 191.77 138.938 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 191.77 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 191.77 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b17ef1f0-4c9f-433f-9a97-16c68318685e")
+		)
+		(pin "2"
+			(uuid "c844bfe1-d8e3-4bf3-9e84-12e0e96dc42e")
+		)
+		(instances
+			(project "CTS_Solar_Panel_Load_Tester"
+				(path "/211b8366-2b1c-422c-86f1-173703c1ab0a"
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -4830,6 +5946,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 139.7 142.24 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9799c70e-679d-4453-b959-8a6141230f23")
+		(property "Reference" "R16"
+			(at 142.24 140.9699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "R"
+			(at 142.24 143.5099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 137.922 142.24 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 139.7 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 139.7 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "514993a0-f05d-445c-bb11-fb65e482119d")
+		)
+		(pin "2"
+			(uuid "690ab86b-db03-449a-9ea6-06f17f076d50")
+		)
+		(instances
+			(project "CTS_Solar_Panel_Load_Tester"
+				(path "/211b8366-2b1c-422c-86f1-173703c1ab0a"
+					(reference "R16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 229.87 114.3 0)
 		(unit 1)
@@ -4890,6 +6076,76 @@
 			(project ""
 				(path "/211b8366-2b1c-422c-86f1-173703c1ab0a"
 					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 198.12 146.05 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ab98c42e-afe7-4f5d-a6e0-9e18eb59c726")
+		(property "Reference" "R4"
+			(at 200.66 144.7799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "R"
+			(at 200.66 147.3199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 196.342 146.05 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 198.12 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 198.12 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7781415c-7fab-413c-a2d5-6f3e92ea1830")
+		)
+		(pin "2"
+			(uuid "78331e66-961f-4eae-b7d7-755054635690")
+		)
+		(instances
+			(project "CTS_Solar_Panel_Load_Tester"
+				(path "/211b8366-2b1c-422c-86f1-173703c1ab0a"
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -5084,6 +6340,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 232.41 137.16 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d1d740dc-f8da-476d-8639-980e33751ca1")
+		(property "Reference" "R14"
+			(at 232.41 130.81 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R"
+			(at 232.41 133.35 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 232.41 138.938 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 232.41 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 232.41 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "63c703f3-e3c0-4c3d-851a-c829dd15a3a2")
+		)
+		(pin "2"
+			(uuid "d43e564d-d7fa-405e-8f7e-61e5b2b75eac")
+		)
+		(instances
+			(project "CTS_Solar_Panel_Load_Tester"
+				(path "/211b8366-2b1c-422c-86f1-173703c1ab0a"
+					(reference "R14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_01x02_Pin")
 		(at 238.76 46.99 180)
 		(unit 1)
@@ -5214,6 +6538,74 @@
 			(project "CTS_Solar_Panel_Load_Tester"
 				(path "/211b8366-2b1c-422c-86f1-173703c1ab0a"
 					(reference "#PWR014")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 218.44 137.16 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e7332d78-a459-432e-977d-523218ef9a7a")
+		(property "Reference" "R13"
+			(at 218.44 130.81 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R"
+			(at 218.44 133.35 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 218.44 138.938 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 218.44 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 218.44 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2c24ecc6-eaf9-4293-a7d3-9f631fe18fa6")
+		)
+		(pin "2"
+			(uuid "a976f8ee-a531-41cf-becc-f1af99b61efd")
+		)
+		(instances
+			(project "CTS_Solar_Panel_Load_Tester"
+				(path "/211b8366-2b1c-422c-86f1-173703c1ab0a"
+					(reference "R13")
 					(unit 1)
 				)
 			)
@@ -5352,6 +6744,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 205.74 137.16 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ea8872ab-bfa3-448f-bbcc-00ede24239ec")
+		(property "Reference" "R12"
+			(at 205.74 130.81 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R"
+			(at 205.74 133.35 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 205.74 138.938 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 205.74 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 205.74 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ba13d985-9b57-4b6f-a796-cf55a6158f85")
+		)
+		(pin "2"
+			(uuid "02c45082-caab-493f-acf2-7876cfe8cac6")
+		)
+		(instances
+			(project "CTS_Solar_Panel_Load_Tester"
+				(path "/211b8366-2b1c-422c-86f1-173703c1ab0a"
+					(reference "R12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Sensor_Energy:INA219AxD")
 		(at 158.75 39.37 0)
 		(unit 1)
@@ -5434,6 +6894,74 @@
 			(project "CTS_Solar_Panel_Load_Tester"
 				(path "/211b8366-2b1c-422c-86f1-173703c1ab0a"
 					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 246.38 137.16 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f60a4317-f5a3-4afa-9fd4-36679980f817")
+		(property "Reference" "R15"
+			(at 246.38 130.81 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R"
+			(at 246.38 133.35 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 246.38 138.938 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 246.38 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 246.38 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c3506825-c2f5-4469-9650-69ec650692d3")
+		)
+		(pin "2"
+			(uuid "53c153ec-5f96-4a1d-b7ee-183d1b6c1bb7")
+		)
+		(instances
+			(project "CTS_Solar_Panel_Load_Tester"
+				(path "/211b8366-2b1c-422c-86f1-173703c1ab0a"
+					(reference "R15")
 					(unit 1)
 				)
 			)
