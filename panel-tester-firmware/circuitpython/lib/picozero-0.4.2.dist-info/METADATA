@@ -1,0 +1,39 @@
+Metadata-Version: 2.4
+Name: picozero
+Version: 0.4.2
+Summary: A beginner-friendly library for using common electronics components with the Raspberry Pi Pico. 
+Home-page: https://github.com/RaspberryPiFoundation/picozero
+Author: Raspberry Pi Foundation
+Author-email: learning@raspberrypi.org
+License: MIT
+Keywords: raspberry,pi,pico,electronics
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: Implementation :: MicroPython
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: license-file
+Dynamic: summary
+
+A beginner-friendly library for using common electronics components with the Raspberry Pi Pico.
+
+```python
+from picozero import LED, Button
+
+led = LED(1)
+button = Button(2)
+
+button.when_pressed = led.on
+button.when_released = led.off
+```
+
+Documentation is available at [picozero.readthedocs.io](https://picozero.readthedocs.io/en/latest/).
