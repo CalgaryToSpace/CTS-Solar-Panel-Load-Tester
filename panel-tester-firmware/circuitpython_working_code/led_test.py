@@ -10,3 +10,4 @@ yellow.direction = digitalio.Direction.OUTPUT
 yellow.value = True   # LED ON
 time.sleep(20)
 yellow.value = False  # LED OFF
+print("this works")
