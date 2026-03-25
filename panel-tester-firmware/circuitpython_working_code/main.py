@@ -50,9 +50,9 @@ def ramp(res, freq):
         # Read INA219 measurements
         bus_v = ina219.bus_voltage           # V
         shunt_v = ina219.shunt_voltage       # mV
+        current_mA = ina219.current 		#mA
         
-        print("Bus Voltage:   " + "{:.2f}".format(bus_v) + " V")
-        print("Shunt Voltage: " + "{:.2f}".format(shunt_v) + " mV")
+        print(f"{bus_v:.2f},{shunt_v:.2f},{current_mA:.2}")
         if ina219.overflow:
             print("Internal Math Overflow Detected!")
             print("")
@@ -79,6 +79,7 @@ ina219.set_calibration_16V_400mA()
 #init pins
 dac = init_dac_pins()
 
+
 # ramp
 STEPS = 200           # ramp resolution
 SAW_FREQ = 1          # 1 Hz sawtooth wave
@@ -86,5 +87,7 @@ DELAY = 1 / (STEPS * SAW_FREQ)
 
 # measure and display loop
 while True:
+   print("bus_voltage_(V), Shunt_voltage_(mV), current_mA")
    ramp(STEPS, SAW_FREQ)
+   print("\n")
    time.sleep(1) # a delay after each sawtooth`12
